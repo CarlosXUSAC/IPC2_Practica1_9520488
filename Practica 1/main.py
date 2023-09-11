@@ -72,7 +72,7 @@ class Tablero():
         n = 0
         r = 0        
 
-        for j in range(0, 4):     
+        for j in range(0, filas):     
             for i in range(0, columnas):
                 color = tempCasilla.color
                 if color == "A" or color == "a":
@@ -83,7 +83,7 @@ class Tablero():
                     color = "green"
                 elif color == "N" or color == "n":
                     color = "orange"
-                elif color == "O" or color == "o":
+                elif color == "P" or color == "p":
                     color = "purple"
                 else:
                     color = "lightgrey"               
@@ -99,7 +99,7 @@ class Tablero():
                 print(orden, end=" ")
                 print(i+n, end=" ")
                 
-            if n > 3:    
+            if n > 2:    
                 r = r + columnas
             n = n + columnas
               
@@ -166,19 +166,19 @@ def main():
                 print(" - Rojo (R)")
                 print(" - Verde (V)")                
                 print(" - Naranja (N)")
-                print(" - Morado (O)", end = "\n\n")                                       
+                print(" - Purpura (P)", end = "\n\n")                                       
 
                 color = input("Ingrese el color que desea: ")
                 filac = int(input("Ingrese la fila: ")) - 1 
                 columc = int(input("Ingrese la columna: ")) - 1                 
                 tablero.pintar(filac, columc, color)
                 tablero.imprimir(colum)                
-                menu = input("Desea continuar? (s/n)\n Imrprimir (i): ")
+                menu = input("Desea continuar? (s/n)\n Imprimir (i): ")
                 if menu == "n":
-                    break
+                    return False
                 elif menu == "i":
                     tablero.grafica(filas, colum)
-                #os.system('cls')
+                # os.system('cls')
             
             
         elif opcion == "2": 
