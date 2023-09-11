@@ -1,0 +1,37 @@
+digraph Arbol {
+	node [shape=circle width=0.9]
+	100 [label="Colorealo
+Guatematel" width=1.0]
+	0 [color=lightblue fillcolor=lightblue fontcolor=lightblue style=filled]
+	100 -> 0
+	1 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	100 -> 1
+	2 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	100 -> 2
+	3 [color=purple fillcolor=purple fontcolor=purple style=filled]
+	100 -> 3
+	4 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	0 -> 4
+	5 [color=red fillcolor=red fontcolor=red style=filled]
+	1 -> 5
+	6 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	2 -> 6
+	7 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	3 -> 7
+	8 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	4 -> 8
+	9 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	5 -> 9
+	10 [color=green fillcolor=green fontcolor=green style=filled]
+	6 -> 10
+	11 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	7 -> 11
+	12 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	8 -> 12
+	13 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	9 -> 13
+	14 [color=lightgrey fillcolor=lightgrey fontcolor=lightgrey style=filled]
+	10 -> 14
+	15 [color=orange fillcolor=orange fontcolor=orange style=filled]
+	11 -> 15
+}
