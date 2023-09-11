@@ -96,10 +96,10 @@ class Tablero():
                 dot.node(f'{i+n}', style='filled', fillcolor=f'{color}',color=f'{color}', fontcolor=f'{color}')  # f'{i}' es el nombre del nodo
                 dot.edge(f'{orden}', f'{i+n}', )  # f'{i}' es el nombre del nodo
                 tempCasilla = tempCasilla.nextCasilla               
-                print(orden, end=" ")
-                print(i+n, end=" ")
+                # print(orden, end=" ")
+                # print(i+n, end=" ")
                 
-            if n > 2:    
+            if n > 1:    
                 r = r + columnas
             n = n + columnas
               
@@ -159,9 +159,9 @@ def main():
             
             print("...................................................................")
             print("\n", end = "")
-            
+            menu = ""
 
-            while True:
+            while menu != 'n':
                 print(" - Azul (A)")
                 print(" - Rojo (R)")
                 print(" - Verde (V)")                
@@ -175,7 +175,7 @@ def main():
                 tablero.imprimir(colum)                
                 menu = input("Desea continuar? (s/n)\n Imprimir (i): ")
                 if menu == "n":
-                    return False
+                    menu = "n" 
                 elif menu == "i":
                     tablero.grafica(filas, colum)
                 # os.system('cls')
